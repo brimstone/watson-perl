@@ -943,7 +943,7 @@ sub createReport {
 	}
 
 	if ($HASLESS){
-		system("less -R $TMPOUT");
+		system("less -FXR $TMPOUT");
 		close($LESSOUT);
 		system("rm $TMPOUT > /dev/null 2>&1");
 	}
